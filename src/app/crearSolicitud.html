@@ -1,0 +1,14 @@
+<div class="login-page">
+  <div class="form">
+    <form name="requestForm" (submit)="onSave()" class="login-form">
+      <input type="text" placeholder="Usuario" required [(ngModel)]="solicitud.usuario" name="usuario">
+      <input type="text" placeholder="Estado" required [(ngModel)]="solicitud.estado" name="estado">
+      <input type="text" placeholder="Tipo daño" required [(ngModel)]="solicitud.tipoDano" name="tipoDano">
+      <input type="text" placeholder="Sector" required [(ngModel)]="solicitud.sector" name="sector">
+      <input type="text" placeholder="Prioridad" required [(ngModel)]="solicitud.prioridad" name="prioridad">
+      <input type="text" placeholder="Descripción" required [(ngModel)]="solicitud.descripcion" name="descripcion">
+      <button type="submit">Guardar</button>
+		  <span>{{errorMessage}}</span>
+    </form>
+  </div>
+</div>

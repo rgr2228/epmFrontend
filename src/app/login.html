@@ -1,0 +1,10 @@
+<div class="login-page">
+  <div class="form">
+    <form name="loginUserForm" class="login-form">
+      <input type="text" placeholder="documento" required name="nombreUsuario" [(ngModel)]="documento"/>
+      <input type="password" placeholder="contraseña" required name="pws" [(ngModel)]="clave"/>
+      <button name="Validar" type="submit" (click)="OnLogin()">Enviar</button>
+      <span>{{errorMessage}}</span>
+    </form>
+  </div>
+</div>

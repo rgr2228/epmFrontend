@@ -1,0 +1,23 @@
+<div>
+	<table border="1" width="100%">
+		<tr>
+			<th height="10%">Nro</th>
+			<th height="25%">Solicitante</th>
+      <th height="25%">Estado</th>
+      <th height="25%">Tipo</th>
+      <th height="25%">Sector</th>
+      <th height="60%">Prioridad</th>
+      <th height="25%">Descripción</th>
+		</tr>
+		<tr *ngFor="let sol of solicitudes">
+			<td>{{sol.codigo}}</td>
+			<td>{{sol.usuario['documento']}}</td>
+      <td>{{sol.estado}}</td>
+      <td>{{sol.tipoDano}}</td>
+      <td>{{sol.sector['nombre']}}</td>
+      <td>{{sol.prioridad}}</td>
+      <td>{{sol.descripcion}}</td>
+		</tr>
+	</table>
+	<button (click)="onNew()">Crear nuevo </button>
+</div>
